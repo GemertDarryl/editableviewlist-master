@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="16dp">
+
+
+    <TextView
+        android:id="@+id/reg_datum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="15dp"
+        android:text="Datum" />
+
+    <TextView
+        android:id="@+id/starttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="15dp"
+        android:layout_below="@id/reg_datum"
+        android:text="Start Tijd" />
+
+    <TextView
+        android:id="@+id/endtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="15dp"
+        android:layout_below="@+id/starttime"
+        android:text="End tijd" />
+
+    <TextView
+        android:id="@+id/locatie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="15dp"
+        android:layout_below="@+id/endtime"
+        android:text="Locatie" />
+
+    <TextView
+        android:id="@+id/invoer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="15dp"
+        android:layout_below="@+id/locatie"
+        android:text="Invoertijd" />
+
+    <EditText
+        android:id="@+id/editdatum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/reg_datum"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@id/reg_datum"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:background="@color/white"
+        />
+
+    <EditText
+        android:id="@+id/editstarttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/editdatum"
+        android:layout_toEndOf="@id/starttime"
+        android:layout_alignBottom="@id/starttime"
+        android:ems="10"
+        android:background="@color/white"
+        android:inputType="textPersonName"
+         />
+
+    <EditText
+        android:id="@+id/edit_endtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:layout_below="@+id/editstarttime"
+        android:layout_toEndOf="@id/endtime"
+        android:layout_alignBottom="@id/endtime"
+        android:ems="10"
+        android:inputType="textPersonName"
+         />
+
+    <EditText
+        android:id="@+id/edit_locatie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:layout_toEndOf="@id/locatie"
+        android:layout_below="@+id/edit_endtime"
+        android:layout_alignBottom="@id/locatie"
+
+               />
+
+    <EditText
+        android:id="@+id/edit_invoer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:layout_toEndOf="@id/invoer"
+        android:layout_below="@+id/edit_locatie"
+        android:layout_alignBottom="@id/invoer"
+
+        />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_invoer"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="16dp"
+      android:text="Toevoegen" />
+
+    <Button
+        android:id="@+id/button_ViewAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_invoer"
+        android:layout_toEndOf="@+id/btn_add"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="23dp"
+        android:hint="View?"
+        android:text="Display All" />
+</RelativeLayout>
